@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "U",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["borderify.js"]
+      }
+    ],
+
+    
+    "browser_specific_settings": {
+        "gecko":{
+            "id": "unitedStatesExt4nsion@example.com"
+        }
+    }
+
+}
+  
